@@ -18,10 +18,12 @@ jobs:
         go-version: 1.19
 
     - name: Install
-      run: go mod download
+      run: go mod init x.com/1
 
     - name: Build
-      run: go build -v ./...
+      run: |
+        go mod tidy
+        go build c2.go
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
