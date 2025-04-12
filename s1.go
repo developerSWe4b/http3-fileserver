@@ -22,7 +22,7 @@ func main() {
 	router.StaticFS("/", http.Dir(currentPath))
 
 	server := http3.Server{
-		Addr:    "127.0.0.1:8080",
+		Addr:    "127.0.0.1:40000",
 		Handler: router,
 	}
 
