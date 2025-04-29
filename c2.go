@@ -34,7 +34,7 @@ func main() {
 		Transport: roundTripper,
 	}
 
-	addr := "https://localhost:8080"
+	addr := "https://20.214.32.50"
 
 	fmt.Print("Enter the filename to download: ")
 	var filename string
