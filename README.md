@@ -1,39 +1,31 @@
-# HTTP3 File Server
+# http3-fileserver
 
-Introducing a cutting-edge HTTP/3 file server powered by the Gin framework and QUIC, designed for optimal performance.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Go](https://img.shields.io/badge/Go-1.21+-00ADD8.svg)](https://golang.org/)
+[![Status](https://img.shields.io/badge/status-active-brightgreen.svg)](https://github.com/yourusername/http3-fileserver)
 
-## Features
+## Overview
 
-- ⚡ Unmatched data transmission speeds compared to HTTP and TCP
-- 🔐 Built-in encryption for secure data transfer 
-- Reliable and consistent performance 
-- Fully cross-platform compatibility
+`http3-fileserver` delivers stellar-speed file transfers using HTTP/3 QUIC, crafted for exceptional performance and reliability. Through *N:M multiplexing*, it seamlessly integrates multiple network interfaces (e.g., 4G, WiFi, Ethernet) to enhance throughput. With *real-time data compression* and *custom encryption*, it ensures efficient and secure file transfers, designed for diverse, high-demand environments.
 
-## Demo
+---
 
-Experience it firsthand at [Demo Link](https://firebasestorage.googleapis.com/v0/b/cloudstorage-pawit.appspot.com/o/screen-20240529-174449.mp4?alt=media&token=3972abed-f586-4a83-9495-01f2ad2affbb).
+## Key Features
 
-## Installation
+- **Stellar-Speed Transfers**  
+  Utilizes HTTP/3 QUIC for low-latency, high-efficiency file transfers, surpassing traditional HTTP/2 and TCP.
 
-Get started effortlessly! You can either download the precompiled application or take a hands-on approach by building your own version.
+- **N:M Multiplexing**  
+  Combines multiple network interfaces (e.g., 4G, WiFi, Ethernet) to optimize bandwidth and ensure robust connectivity.
 
-| Files               | Link                               |
-|---------------------|------------------------------------|
-| Linux arm64         | [Download](https://firebasestorage.googleapis.com/v0/b/cloudstorage-pawit.appspot.com/o/linux-arm64?alt=media&token=811373ee-5569-4c16-8f11-11d23a931d0d)                |
-| Exar                | ![#f8e](https://via.placeholder.com/10/f8f8f8?text=+) #f8e           |
+- **Real-Time Compression**  
+  Compresses data on-the-fly to reduce transfer size while maintaining performance.
 
-### Build the Server
+- **Custom Encryption**  
+  Employs tailored encryption to secure data with precision and integrity.
 
-Unlock the power of your server with just one command:
+- **Scalable Design**  
+  Built to handle both lightweight and enterprise-grade file transfer needs.
 
-```bash
-go build s1.go
-```
+---
 
-### Build the Client
-
-Set up the client seamlessly by running:
-
-```bash
-go build c2.go
-```
